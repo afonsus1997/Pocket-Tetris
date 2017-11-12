@@ -1,0 +1,7 @@
+Added Component: Designator=D1(I2C_OLED_PACKAGE)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=SCL Pin=D1-2
+Added Pin To Net: NetName=SDA Pin=D1-3
+Added Pin To Net: NetName=VCC Pin=D1-4
+Added Member To Class: ClassName=Sheet1 Member=Component D1 I2C_OLED

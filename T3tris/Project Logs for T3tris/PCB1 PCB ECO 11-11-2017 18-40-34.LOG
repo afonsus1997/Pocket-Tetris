@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator=? NewDesignator=D1
+Added Component: Designator=S1(MSK-12C02)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetB1_+ Pin=S1-COM
+Added Pin To Net: NetName=VCC Pin=S1-L2
+Added Member To Class: ClassName=Sheet1 Member=Component S1 
+Added Member To Class: ClassName=Sheet1 Member=Component S? DTS-6
+Added Member To Class: ClassName=Sheet1 Member=Component S? DTS-6
+Added Room: Name=Sheet1

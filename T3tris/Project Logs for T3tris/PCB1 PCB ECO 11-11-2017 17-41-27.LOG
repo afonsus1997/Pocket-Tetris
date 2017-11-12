@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=VCC Pin=P1-1
+Removed Pin From Net: NetName=GND Pin=P1-2
+Removed Pin From Net: NetName=SCL Pin=P1-3
+Removed Pin From Net: NetName=SDA Pin=P1-4
+Removed Member From Class: ClassName=Sheet1 Member=P1
+Added Component: Designator=?(I2C_OLED_PACKAGE)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=?-1
+Added Pin To Net: NetName=SCL Pin=?-2
+Added Pin To Net: NetName=SDA Pin=?-3
+Added Pin To Net: NetName=VCC Pin=?-4
+Added Member To Class: ClassName=Sheet1 Member=Component ? I2C_OLED
+Added Member To Class: ClassName=Sheet1 Member=Component S? DTS-6
+Added Member To Class: ClassName=Sheet1 Member=Component S? DTS-6

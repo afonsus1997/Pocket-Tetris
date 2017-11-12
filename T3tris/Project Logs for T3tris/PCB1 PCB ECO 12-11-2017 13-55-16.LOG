@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=MOSI Pin=P1-1
+Removed Pin From Net: NetName=Left Pin=P1-2
+Removed Pin From Net: NetName=Middle Pin=P1-3
+Removed Pin From Net: NetName=RST Pin=P1-4
+Removed Pin From Net: NetName=VCC Pin=P1-5
+Removed Pin From Net: NetName=GND Pin=P1-6
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=VCC Pin=P1-2
+Added Pin To Net: NetName=RST Pin=P1-3
+Added Pin To Net: NetName=Middle Pin=P1-4
+Added Pin To Net: NetName=Left Pin=P1-5
+Added Pin To Net: NetName=MOSI Pin=P1-6

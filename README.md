@@ -3,13 +3,23 @@
 
 ## Info
 
-* info text
-
 * Pocket Tetris game based of the work of https://github.com/dombeef/pockeTETRIS
 
 ``` Using libs from https://github.com/afonsus1997/Altium-Libs ```
 
-## Renders
+## Pictures and Renders
+
+### Pictures
+
+![both](https://imgur.com/8txGt0k.jpg)
+
+![front](https://imgur.com/JbAdyEd.jpg)
+
+![back](https://imgur.com/prVJaxe.jpg)
+
+
+
+### Renders
 
 ![](https://i.imgur.com/6HiNUpv.png)
 

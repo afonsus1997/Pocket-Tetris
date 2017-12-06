@@ -11,6 +11,17 @@
 
 ### Pictures
 
+#### Assembly Process
+
+![front](https://imgur.com/A2TSoft.jpg)
+
+![back](https://imgur.com/xJlDgKI.jpg)
+
+(still missing some parts)
+
+
+#### PCBs
+
 ![both](https://imgur.com/8txGt0k.jpg)
 
 ![front](https://imgur.com/JbAdyEd.jpg)

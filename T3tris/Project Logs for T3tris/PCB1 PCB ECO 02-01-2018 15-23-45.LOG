@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=?-1
+Removed Pin From Net: NetName=SCL Pin=?-2
+Removed Pin From Net: NetName=SDA Pin=?-3
+Removed Pin From Net: NetName=VCC Pin=?-4
+Removed Member From Class: ClassName=Sheet1 Member=?

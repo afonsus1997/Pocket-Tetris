@@ -1,0 +1,6 @@
+Added Component: Designator=*(LED 0603)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC Pin=*-1
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Net: Name=Net*_2
+Added Member To Class: ClassName=Sheet1 Member=Component * LED

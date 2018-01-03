@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=GND Pin=P1-1
+Removed Pin From Net: NetName=VCC Pin=P1-2
+Removed Pin From Net: NetName=RST Pin=P1-3
+Removed Pin From Net: NetName=Middle Pin=P1-4
+Removed Pin From Net: NetName=Left Pin=P1-5
+Removed Pin From Net: NetName=MOSI Pin=P1-6
+Removed Member From Class: ClassName=Sheet1 Member=P1
+Added Component: Designator=TP1(TP15R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP2(TP15R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP3(TP15R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP4(TP15R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP5(TP15R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP6(TP15R)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=TP1-TP
+Added Pin To Net: NetName=VCC Pin=TP2-TP
+Added Pin To Net: NetName=RST Pin=TP3-TP
+Added Pin To Net: NetName=Middle Pin=TP4-TP
+Added Pin To Net: NetName=Left Pin=TP5-TP
+Added Pin To Net: NetName=MOSI Pin=TP6-TP
+Added Member To Class: ClassName=Sheet1 Member=Component TP1 Test pad
+Added Member To Class: ClassName=Sheet1 Member=Component TP2 Test pad
+Added Member To Class: ClassName=Sheet1 Member=Component TP3 Test pad
+Added Member To Class: ClassName=Sheet1 Member=Component TP4 Test pad
+Added Member To Class: ClassName=Sheet1 Member=Component TP5 Test pad
+Added Member To Class: ClassName=Sheet1 Member=Component TP6 Test pad

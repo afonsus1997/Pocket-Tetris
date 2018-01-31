@@ -1,0 +1,12 @@
+Added Component: Designator=TP1(TP15R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP3(TP15R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP6(TP15R)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=TP1-TP
+Added Pin To Net: NetName=RST Pin=TP3-TP
+Added Pin To Net: NetName=MOSI Pin=TP6-TP
+Added Member To Class: ClassName=Sheet1 Member=Component TP1 Test pad
+Added Member To Class: ClassName=Sheet1 Member=Component TP3 Test pad
+Added Member To Class: ClassName=Sheet1 Member=Component TP6 Test pad

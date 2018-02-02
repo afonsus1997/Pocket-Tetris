@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=GND Pin=L1*-1
+Removed Pin From Net: NetName=VCC Pin=L1*-2
+Removed Pin From Net: NetName=Left Pin=S1-1
+Removed Pin From Net: NetName=Left Pin=S1-2
+Removed Pin From Net: NetName=VCC Pin=S1-3
+Removed Pin From Net: NetName=VCC Pin=S1-4
+Removed Pin From Net: NetName=Middle Pin=S2-1
+Removed Pin From Net: NetName=Middle Pin=S2-2
+Removed Pin From Net: NetName=VCC Pin=S2-3
+Removed Pin From Net: NetName=VCC Pin=S2-4
+Removed Pin From Net: NetName=MOSI Pin=S3-1
+Removed Pin From Net: NetName=MOSI Pin=S3-2
+Removed Pin From Net: NetName=VCC Pin=S3-3
+Removed Pin From Net: NetName=VCC Pin=S3-4
+Removed Pin From Net: NetName=Middle Pin=TP4-TP
+Removed Pin From Net: NetName=Left Pin=TP5-TP
+Removed Pin From Net: NetName=RST Pin=U?-1
+Removed Pin From Net: NetName=GND Pin=U?-4
+Removed Pin From Net: NetName=MOSI Pin=U?-5
+Removed Pin From Net: NetName=Left Pin=U?-6
+Removed Pin From Net: NetName=Middle Pin=U?-7
+Removed Pin From Net: NetName=VCC Pin=U?-8
+Removed Member From Class: ClassName=Sheet1 Member=L1*
+Removed Member From Class: ClassName=Sheet1 Member=S1
+Removed Member From Class: ClassName=Sheet1 Member=S2
+Removed Member From Class: ClassName=Sheet1 Member=S3
+Removed Member From Class: ClassName=Sheet1 Member=U?
+Added Pin To Net: NetName=Left Pin=TP4-TP
+Added Pin To Net: NetName=Middle Pin=TP5-TP
+Change Net Name : Old Net Name=Left New Net Name=SCK
+Change Net Name : Old Net Name=Middle New Net Name=MISO

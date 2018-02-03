@@ -447,13 +447,13 @@ void loop() {
   ssd1306_init();
   ssd1306_fillscreen(0x00);
 
-  ssd1306_char_f8x8(1, 64, "TETRIS");
+  ssd1306_char_f8x8(1, 50, "TETRIS");
   /* The lowercase character set is seriously compromised and hacked about to remove unused letters in order to save code space
      .. hence all lowercase words look like nonsense! See font8x8AJ.h for details on the mapping.
   */
   
-  ssd1306_char_f8x8(1, 48, " FOR");
-  ssd1306_char_f8x8(1, 40, "DADDIO");
+  ssd1306_char_f8x8(1, 30, "1");
+  ssd1306_char_f8x8(1, 20, "2");
 
   drawScreenBorder();
 
@@ -501,9 +501,15 @@ void loop() {
   if (sChange == 0) {
     delay(1600);
 
-    ssd1306_char_f8x8(1, 20, "LOVE");
-    ssd1306_char_f8x8(1, 10, "DOM");
-    delay(1500);
+    //ssd1306_char_f8x8(1, 20, "   AM");
+    //ssd1306_char_f8x8(1, 10, "START");
+    
+    while(1){
+      if(digitalRead(0) | digitalRead(1) | digitalRead(2)){
+        randomSeed(millis());
+        break; 
+      }
+    }
     ssd1306_fillscreen(0x00);
     playTetris();
   }
@@ -987,7 +993,8 @@ void playTetris(void) {
   stopAnimate = 0;
   score = 0;
   keyLock = 0;
-
+  randomSeed(millis());
+  
   fillGrid(0, NORMAL);
   fillGrid(0, GHOST);
 

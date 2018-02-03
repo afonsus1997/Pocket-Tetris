@@ -1,0 +1,144 @@
+STEP translation to Solid Edge
+Date: sexta-feira,fevereiro 02,2018 04:19
+Source File: F:\Documents\GitHub\Pocket Tetris\Renders\3d\PCB1.step
+Author: Author
+Organization: Open CASCADE
+Source System: Open CASCADE 6.8
+
+Hardware:
+Processor: Intel(R) Core(TM) i5-4670K CPU @ 3.40GHz
+Operating System: Windows 8 Professional
+Installed Memory: 7.85 GB
+
+Software Information
+Parasolid Version: 30.0.167
+PSBodyShop Version: 30.0.81
+Step Adapter Version: 3.0.52
+Solid Edge Version: 110.00.00.107 x64
+
+Step Import Options
+Import Faceted Bodies: On
+Import Check Bodies: Off
+Import Curves: On
+Import DoNotSave: On
+Import Multiple Bodies As Single Part File: On
+Import Stitch Surfaces: On
+Import Boolean Solids: On
+Make Base Feature: On
+Simplify Geometry: On
+Import Imprint Curves: On
+Import Drive: C:
+Import Stitch Surfaces: On
+Import Surfaces: On
+Import Output Path: F:\Documents\GitHub\Pocket Tetris\Renders\3d
+Import Enable Default Output Path: On
+Import Path: 
+
+Translating to Parasolid data types...
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
+Warn:     Unregistered message code: PSF_INVALID_COLORS. Notify vendor.
+
++Begin Assembly: 1
++Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\PCB1.asm
+|--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\Board.par
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\L1_.asm
+|  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\128x64I2COLEDDisplayAdafruit.par
+|--+Total Parts: 8
+|--+Assemblies: 0
+|--+Solid Bodies: 8
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\BT1.asm
+|  |--+Begin Assembly: 3
+|  |--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\cr2032_white.asm
+|  |  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\User_Library-CR2032_Holder_Holder_Domyslna.par
+|  |  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\User_Library-CR2032_Holder_Pin_minus_Domyslna.par
+|  |  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\User_Library-CR2032_Holder_Pin_plus_Domyslna.par
+|  |--+Total Parts: 14
+|  |--+Assemblies: 0
+|  |--+Solid Bodies: 14
+|  |--+Sheet Bodies: 0
+|  |--+End Assembly: 3
+|--+Total Parts: 1
+|--+Assemblies: 1
+|--+Solid Bodies: 0
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\S2.asm
+|  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\tac6x6.par
+|--+Total Parts: 2
+|--+Assemblies: 0
+|--+Solid Bodies: 2
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\S1.asm
+|  |--+Reusing File F:\Documents\GitHub\Pocket Tetris\Renders\3d\tac6x6.par
+|--+Total Parts: 1
+|--+Assemblies: 0
+|--+Solid Bodies: 1
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\S3.asm
+|  |--+Reusing File F:\Documents\GitHub\Pocket Tetris\Renders\3d\tac6x6.par
+|--+Total Parts: 1
+|--+Assemblies: 0
+|--+Solid Bodies: 1
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\_.asm
+|  |--+Begin Assembly: 3
+|  |--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\LED-0603H0.75.asm
+|  |  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\Open CASCADE STEP translator 6.8 1.7.1.1.par
+|  |  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\Open CASCADE STEP translator 6.8 1.7.1.2.par
+|  |--+Total Parts: 6
+|  |--+Assemblies: 0
+|  |--+Solid Bodies: 6
+|  |--+Sheet Bodies: 0
+|  |--+End Assembly: 3
+|--+Total Parts: 1
+|--+Assemblies: 1
+|--+Solid Bodies: 0
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\R4.asm
+|  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\Capacitor_0603.par
+|--+Total Parts: 2
+|--+Assemblies: 0
+|--+Solid Bodies: 2
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
+|--+Begin Assembly: 2
+|--+Created SE Assembly File F:\Documents\GitHub\Pocket Tetris\Renders\3d\S4.asm
+|  |--+Created SE Part File F:\Documents\GitHub\Pocket Tetris\Renders\3d\slideswitch.par
+|--+Total Parts: 2
+|--+Assemblies: 0
+|--+Solid Bodies: 2
+|--+Sheet Bodies: 0
+|--+End Assembly: 2
++Total Parts: 10
++Assemblies: 8
++Solid Bodies: 2
++Sheet Bodies: 0
++End Assembly: 1
+Translation process completed
+Total time required to translate and post process:00 : 00 : 03

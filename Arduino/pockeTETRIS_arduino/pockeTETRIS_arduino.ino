@@ -286,7 +286,7 @@ ISR(PCINT0_vect) { // PB0 pin button interrupt
     keyLock = 1;
     keyTime = millis();
   }
-  if (digitalRead(1) == HIGH){
+  if (digitalRead(1) == !HIGH){
     keyLock = 3;
   }
 }
@@ -439,6 +439,9 @@ void setup() {
   PCMSK = 0b00000011;   // pin change mask: listen to portb bit 1
   GIMSK |= 0b00100000;  // enable PCINT interrupt
   sei();                // enable all interrupts
+  pinMode(0, INPUT_PULLUP);
+  pinMode(2, INPUT_PULLUP);
+  pinMode(1, INPUT_PULLUP);
   ssd1306_init();       // initialise the screen
   keyLock = 0;
 }
@@ -452,8 +455,8 @@ void loop() {
      .. hence all lowercase words look like nonsense! See font8x8AJ.h for details on the mapping.
   */
   
-  ssd1306_char_f8x8(1, 30, "1");
-  ssd1306_char_f8x8(1, 20, "2");
+  ssd1306_char_f8x8(1, 30, "");
+  ssd1306_char_f8x8(1, 20, "START");
 
   drawScreenBorder();
 
@@ -469,7 +472,7 @@ void loop() {
   long startT = millis();
   long nowT = 0;
   boolean sChange = 0;
-  while (digitalRead(0) == HIGH) {
+  while (digitalRead(0) == !HIGH) {
     nowT = millis();
     if (nowT - startT > 2000) {
       sChange = 1;
@@ -505,7 +508,7 @@ void loop() {
     //ssd1306_char_f8x8(1, 10, "START");
     
     while(1){
-      if(digitalRead(0) | digitalRead(1) | digitalRead(2)){
+      if(!digitalRead(0) | !digitalRead(1) | !digitalRead(2)){
         randomSeed(millis());
         break; 
       }
@@ -735,8 +738,8 @@ byte checkCollision(void) {
 
 void handleInput(void) {
   //middle button
-  if (digitalRead(2) == HIGH && keyLock == 2 && millis() - keyTime > 300) {
-    while (digitalRead(2) == HIGH) {
+  if (digitalRead(2) == !HIGH && keyLock == 2 && millis() - keyTime > 300) {
+    while (digitalRead(2) == !HIGH) {
       drawPiece(ERASE);
       movePieceDown();
       drawPiece(DRAW);
@@ -748,7 +751,7 @@ void handleInput(void) {
   }
 
   //left button
-  if (digitalRead(0) == HIGH && (keyLock == 1 || keyLock == 4) && millis() - keyTime > 200) {
+  if (digitalRead(0) == !HIGH && (keyLock == 1 || keyLock == 4) && millis() - keyTime > 200) {
     drawPiece(ERASE);
     movePieceRight();
     drawPiece(DRAW);
@@ -758,7 +761,7 @@ void handleInput(void) {
   }
 
   //add 3rd button - right button
-  if (digitalRead(1) == HIGH && (keyLock == 3 || keyLock == 5) && millis() - keyTime > 200) {
+  if (digitalRead(1) == !HIGH && (keyLock == 3 || keyLock == 5) && millis() - keyTime > 200) {
     drawPiece(ERASE);
     movePieceLeft();
     drawPiece(DRAW);
@@ -768,7 +771,7 @@ void handleInput(void) {
   }
 
   //checks if button is simply pressed once and not held down
-  if (digitalRead(0) == LOW && digitalRead(1) == LOW && digitalRead(2) == LOW) {
+  if (digitalRead(0) == !LOW && digitalRead(1) == !LOW && digitalRead(2) == !LOW) {
     if (keyLock == 2  && millis() - keyTime < 300) {
       drawPiece(ERASE);
       rotatePiece();

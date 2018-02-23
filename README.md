@@ -5,13 +5,26 @@
 
 * Pocket Tetris game based on the amazing work of https://github.com/dombeef/pockeTETRIS
 
-``` Using libs from https://github.com/afonsus1997/Altium-Libs ```
+* Using libs from https://github.com/afonsus1997/Altium-Libs
 
 ## Pictures and Renders
 
 ### Pictures
 
-#### Assembly Process
+#### New version
+
+![](https://i.imgur.com/0cF5FeI.png)
+
+![](https://i.imgur.com/kzyZ3HU.png)
+
+![](https://i.imgur.com/StgZzbj.png)
+
+![](https://i.imgur.com/b02wUG5.png)
+
+
+#### Old Version
+
+##### Assembly Process
 
 ![front](https://imgur.com/A2TSoft.jpg)
 
@@ -20,7 +33,7 @@
 (still missing some parts)
 
 
-#### PCBs
+##### PCBs
 
 ![both](https://imgur.com/8txGt0k.jpg)
 

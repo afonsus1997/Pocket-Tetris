@@ -472,43 +472,19 @@ void loop() {
   long startT = millis();
   long nowT = 0;
   boolean sChange = 0;
-  while (digitalRead(0) == !HIGH) {
-    nowT = millis();
-    if (nowT - startT > 2000) {
-      sChange = 1;
-      if (digitalRead(2) == HIGH) {
-        ssd1306_char_f8x8(2, 8, "MODE");
-        if (challengeMode == 0) {
-          challengeMode = 1;
-          ssd1306_char_f8x8(2, 16, "HARD");
-        } else {
-          challengeMode = 0;
-          ssd1306_char_f8x8(1, 16, "NORMAL");
-        }
-      } else {
-        ssd1306_char_f8x8(1, 16, "GHOST");
-        if (ghost == 0) {
-          ghost = 1;
-          ssd1306_char_f8x8(2, 8, "ON");
-        } else {
-          ghost = 0;
-          ssd1306_char_f8x8(2, 8, "OFF");
-        }
-      }
-      break;
-    }
-    if (sChange == 1) break;
-  }
-  while (digitalRead(0) == HIGH);
+  
+//    if (sChange == 1) break;
+  
+  //while (digitalRead(0) == HIGH);
 
   if (sChange == 0) {
-    delay(1600);
+    delay(500);
 
     //ssd1306_char_f8x8(1, 20, "   AM");
     //ssd1306_char_f8x8(1, 10, "START");
     
     while(1){
-      if(!digitalRead(0) | !digitalRead(1) | !digitalRead(2)){
+      if(!digitalRead(0) || !digitalRead(1) || !digitalRead(2)){
         randomSeed(millis());
         break; 
       }
@@ -738,7 +714,7 @@ byte checkCollision(void) {
 
 void handleInput(void) {
   //middle button
-  if (digitalRead(2) == !HIGH && keyLock == 2 && millis() - keyTime > 300) {
+  if (digitalRead(2) == !HIGH && millis() - keyTime > 400 && keyLock == 2 ) {
     while (digitalRead(2) == !HIGH) {
       drawPiece(ERASE);
       movePieceDown();
@@ -771,7 +747,7 @@ void handleInput(void) {
   }
 
   //checks if button is simply pressed once and not held down
-  if (digitalRead(0) == !LOW && digitalRead(1) == !LOW && digitalRead(2) == !LOW) {
+  if (!(digitalRead(0) == !HIGH || digitalRead(1) == !HIGH || digitalRead(2) == !HIGH)) {
     if (keyLock == 2  && millis() - keyTime < 300) {
       drawPiece(ERASE);
       rotatePiece();
@@ -1002,8 +978,8 @@ void playTetris(void) {
   fillGrid(0, GHOST);
 
   // Attach the interrupt to read key 2
-  attachInterrupt(0, playerIncTetris, RISING);
-  attachInterrupt(1, playerIncTetris1, RISING);//3rd button
+  attachInterrupt(0, playerIncTetris, FALLING);
+  attachInterrupt(1, playerIncTetris1, FALLING);//3rd button
 
   loadPiece(random(1, 8), STARTY, STARTX);
   drawPiece(DRAW);

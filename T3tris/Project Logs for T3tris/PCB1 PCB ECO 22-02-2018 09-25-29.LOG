@@ -1,0 +1,18 @@
+Added Component: Designator=R1(C 0603 / 1608)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "RES-08609"; VariantName = "[No Variations]"
+Added Component: Designator=R2(C 0603 / 1608)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "RES-08609"; VariantName = "[No Variations]"
+Added Component: Designator=R3(C 0603 / 1608)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "RES-08609"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=Left Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=Middle Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=MOSI Pin=R3-2
+Added Member To Class: ClassName=Sheet1 Member=Component R1 100K
+Added Member To Class: ClassName=Sheet1 Member=Component R2 100K
+Added Member To Class: ClassName=Sheet1 Member=Component R3 100K
